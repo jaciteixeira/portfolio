@@ -1,0 +1,29 @@
+.rodape{
+    background-color: #333333;
+    color: #fff;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo{
+        padding-left: 5%;
+    }
+
+    .icons-social{
+        // background-color: aqua;
+        width: 8%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 30px;
+        text-decoration: none;
+        
+        :link, :visited{
+            color: #fff;
+        }
+        :hover{
+            font-size: 35px;
+        }
+    }
+}
