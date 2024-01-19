@@ -11,3 +11,23 @@ body,
   width: 100%;
   font-family: 'Inconsolata', sans-serif;
 }
+
+/* Estilo para Webkit (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c9bb92; /* Cor da alça da barra de rolagem */
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #dadada; /* Cor de fundo da barra de rolagem */
+}
+
+body {
+  scrollbar-width: thin; /* Para Firefox */
+  scrollbar-color: #c9bb92 #dadada; /* Para Firefox */
+}
+

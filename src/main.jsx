@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
+import Cabecalho from './components/Cabecalho.jsx'
 import './index.css'
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
@@ -11,8 +12,8 @@ const router = createBrowserRouter([
     element: <App/>,
     children: [
       {
-        // path: '/about',
-        // element: <About/>
+        path: '/about',
+        element: <Cabecalho/>
       }
     ]
 
