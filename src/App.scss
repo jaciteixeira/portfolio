@@ -7,68 +7,102 @@
   padding-top: 6rem;
   display: flex;
   flex-direction: column;
+  // justify-content: center;
 }
 
 #intro{
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin: 20px;
+  margin-top: 20px;
+  // background-color: aquamarine;
+
+  > *{ //estilo que aplica a todos os filhos direto
+    max-width: 1900px;
+  }
   
-  .card{
+  & .card{ //mesmo que escrever "#intro .card{}"
     background-color: #f8f3e4;
-    width: 95%;
+    width: 85%;
     border-radius: 30px;
     padding: 5%;
     margin-top: 2%;
-    align-items: center;
     display: flex;
-    justify-content: space-around;
-
-    & h2{
-      // background-color: #e3ffc9;
-      font-weight: 800;
-      font-size: 4.2rem;
-      line-height: 6rem;
-      max-width: 550px;
-      margin-bottom: 5%;
-      margin-left: 18px;
+    justify-content: center;
+    align-items: center;
+    
+    & img {
+      // background-color: lightpink;
+      width: 100%;
     }
 
-    & p{
-      // background-color: #e9c9ff;
-      font-size: 1.3rem;
-      font-weight: 400;
-      max-width: 530px;
-      margin-left: 18px;
+    & .card-conteudo{
+      // background-color: #ddbd5d;
+      width: 50%;
+      height: 100%;
+      // align-items: center;
+
+      & h2{
+        // background-color: #e3ffc9;
+        font-weight: 800;
+        font-size: 4.2rem;
+        line-height: 6rem;
+        max-width: 60%;
+        margin-bottom: 18%;
+        // margin-left: 18px;
+        align-items: flex-start;
+      }
+  
+      & p{
+        // background-color: #e9c9ff;
+        // align-items: flex-end;
+        font-size: 1.3rem;
+        font-weight: 400;
+        // max-width: 85%;
+        // margin-left: 18px;
+      }
     }
+
   }
 }
 
 #about{
-  width: 100%;
   display: flex;
   justify-content: center;
-  padding: 2%;
-  margin-top: 1%;
   align-items: center;
-  // background-color: #d6a475;
-  
-  .conteudo-about{
-    // background-color: #f19f9f;
-    padding: 2%;
-    margin: 1%;
-    // width: 35%;
-    margin-left: 5%;
-    
-    & h1{
-      font-size: 3em;
-    }
-    & p{
-      margin-top: 5%;
-      font-size: 1.15em;
-    }
+  margin: 5%;
+
+  & > *{
+    max-width: 1900px;
   }
+
+  & .card{ //mesmo que escrever "#intro .card{}"
+  display: flex;
+  // background-color: #ddbd5d;
+  align-items: center;
+  justify-content: space-around;
+  }
+
+  h1{
+    font-size: 3em;
+  }
+
+  // & .foto-about{
+  //   background-color: lightblue; 
+  // }
+
+  & .conteudo-about{
+    // background-color: aquamarine;
+    padding: 5%;
+  }
+    
+  
+
+  & p{
+    max-width: 90%;
+    margin-top: 5%;
+    font-size: 1em;
+  }
+  
 }
 
 

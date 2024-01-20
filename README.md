@@ -37,7 +37,7 @@ Instalação: `npm install`
 No diretório do projeto, você pode executar: `npm start`
 
 Executa o aplicativo no modo de desenvolvimento.
-Abra [http://localhost:5173] (http://localhost:5173) para visualizá-lo no navegador. A página será recarregada se você fizer edições.
+Abra [http://localhost:5173] (http://localhost:5173) para visualizá-lo no navegador. A página será recarregada se você fizer alterações.
 
 ## Instruções de uso
 Abra a pasta do projeto e navegue até `/src/components/`.
