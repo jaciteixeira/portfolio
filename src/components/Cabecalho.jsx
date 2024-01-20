@@ -24,12 +24,12 @@ export default function Cabecalho(){
                 <img className="logo" src={logo} alt='Logo do site'/>
             </Link>
             <div className="links">
-                <Link className="link" to="/" onClick={() => scrollToSection("intro")}>Home</Link>
-                <Link className="link" to="/" onClick={() => scrollToSection("about")}>About</Link>
-                <Link className="link" to="/" onClick={() => scrollToSection("experience")}>Experience</Link>
-                <Link className="link" to="/" onClick={() => scrollToSection("projects")}>Projects</Link>
-                <Link className="link" to="/" onClick={() => scrollToSection("contat")}>Contact</Link>
-                <Link className="link" to="/" onClick={() => scrollToSection("contat")}>Formação</Link>
+                <Link className="link" to="/home" onClick={() => scrollToSection("intro")}>Home</Link>
+                <Link className="link" to="/about">Sobre</Link>
+                <Link className="link" to="/home" onClick={() => scrollToSection("habilidades")}>Habilidades</Link>
+                <Link className="link" to="/home" onClick={() => scrollToSection("projects")}>Projetos</Link>
+                {/* <Link className="link" to="/" onClick={() => scrollToSection("contat")}>Contact</Link> */}
+                <Link className="link" to="/home" onClick={() => scrollToSection("contat")}>Formação</Link>
             </div>
         </nav>
     </>
