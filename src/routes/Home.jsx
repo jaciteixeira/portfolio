@@ -1,6 +1,6 @@
-// import React from 'react'
+import React, { useEffect } from 'react'
 
-import image from "../assets/image-mulher-sentada.svg";
+import imageIntro from "../assets/image-mulher-sentada.svg";
 import react from '../assets/logo-react.svg'
 import cplus from '../assets/logo-c++.svg'
 import git from '../assets/logo-git.svg'
@@ -17,6 +17,22 @@ import construcao from '../assets/construcao.svg'
 import SoftSkill from "../components/SoftSkill";
 
 const Home = () => {
+
+  useEffect(() => {
+    const userAgent = navigator.userAgent;
+    const body = document.querySelector('body');
+
+    if (userAgent.match(/Android/i)) {
+      body.classList.add('android');
+    } else if (userAgent.match(/iPhone|iPad|iPod/i)) {
+      body.classList.add('ios');
+    } else if (userAgent.match(/Windows Phone/i)) {
+      body.classList.add('windows-phone');
+    } else {
+      body.classList.add('other-device');
+    }
+  }, []);
+  
   return (
     <>
       <section id="intro" className="intro">
@@ -36,7 +52,7 @@ const Home = () => {
             </p>
           </div>
           <div className="card-image">
-            <img className="image" src={image} alt="Ilustração " />
+            <img className="image" src={imageIntro} alt="Ilustração " />
           </div>
         </div>
       </section>
