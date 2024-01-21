@@ -136,6 +136,19 @@
   }
 }
 
+#projects .card{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 600px;
+  background-color: #f8f3e4;
+  img {
+    width: 100px;
+  }
+}
+
 #about{
   display: flex;
   justify-content: center;

@@ -12,7 +12,7 @@ import oracle from '../assets/logo-oracle.svg'
 import sass from '../assets/logo-sass.svg'
 import spring from '../assets/logo-spring.svg'
 import css from '../assets/logo-css.svg'
-// import comunicacao from '../assets/comunicacao.svg'
+import construcao from '../assets/construcao.svg'
 
 import SoftSkill from "../components/SoftSkill";
 
@@ -111,6 +111,15 @@ const Home = () => {
             </div>
           </div>
         </div>
+      </section>
+
+      <section id="projects">
+        <div className="card">
+        <h1>SECTION EM CONSTRUÇÃO</h1>
+        <img src={construcao} alt="Em Construção" />
+
+        </div>
+
       </section>
     </>
   )
