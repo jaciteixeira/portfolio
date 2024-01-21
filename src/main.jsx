@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App.jsx';
 import About from './routes/About.jsx';
 import Home from './routes/Home.jsx';
+import Education from './routes/Education.jsx';
 import './index.css'
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
@@ -14,7 +15,11 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/portfolio',
-        element: <App/>
+        element: <Home/>
+      },
+      {
+        path: '/',
+        element: <Home/>
       },
       {
         path: '/home',
@@ -23,9 +28,12 @@ const router = createBrowserRouter([
       {
         path: '/about',
         element: <About/>
+      },
+      {
+        path: '/education',
+        element: <Education/>
       }
     ]
-
   }
 ])
 

@@ -1,92 +1,118 @@
-import React from 'react'
-import { Outlet } from "react-router-dom";
-// import Cabecalho from "./components/Cabecalho";
-// import Rodape from "./components/Rodape";
-// import WhatsappIcon from "./components/WhatsappIcon";
-// import BackToTopButton from "./components/BackToTopButton";
+// import React from 'react'
+
 import image from "../assets/image-mulher-sentada.svg";
-import foto from "../assets/foto.svg";
-import { 
-  FaJava,
-  FaJs,
-  FaPython
- } from 'react-icons/fa';
+import react from '../assets/logo-react.svg'
+import cplus from '../assets/logo-c++.svg'
+import git from '../assets/logo-git.svg'
+import html from '../assets/logo-html.svg'
+import java from '../assets/logo-java.svg'
+import javascript from '../assets/logo-javascript.svg'
+import node from '../assets/logo-node-js.svg'
+import oracle from '../assets/logo-oracle.svg'
+import sass from '../assets/logo-sass.svg'
+import spring from '../assets/logo-spring.svg'
+import css from '../assets/logo-css.svg'
+// import comunicacao from '../assets/comunicacao.svg'
+
+import SoftSkill from "../components/SoftSkill";
 
 const Home = () => {
   return (
     <>
-        <section id="intro" className="intro">
-          <div className="card">
-            <div className="card-conteudo">
-              <h2>Desenvolvedora de Software </h2>
-              <p>
-                Meu nome é Jaci Teixeira, e sou uma desenvolvedora Full Stack
-                com ênfase no back-end. Possuo experiência no desenvolvimento de
-                aplicações com API REST, utilizando técnicas avançadas de
-                codificação. Minhas habilidades incluem o domínio de ferramentas
-                como
-                <strong>
-                  {" "}
-                  Spring Boot, React.js, Node.js, SQL, Git/Github.
-                </strong>
-              </p>
-            </div>
-            <div className="card-image">
-              <img className="image" src={image} alt="Ilustração " />
-            </div>
+      <section id="intro" className="intro">
+        <div className="card">
+          <div className="card-conteudo">
+            <h2>Desenvolvedora de Software </h2>
+            <p>
+              Meu nome é Jaci Teixeira, e sou uma desenvolvedora Full Stack
+              com ênfase no back-end. Possuo experiência no desenvolvimento de
+              aplicações com API REST, utilizando técnicas avançadas de
+              codificação. Minhas habilidades incluem o domínio de ferramentas
+              como
+              <strong>
+                {" "}
+                Spring Boot, React.js, Node.js, SQL, Git/Github.
+              </strong>
+            </p>
           </div>
-        </section>
-        <section id="about">
-          <div className="card">
-            <div className="foto-about">
-              <img src={foto} alt="Foto Jaci Teixeira" />
-            </div>
+          <div className="card-image">
+            <img className="image" src={image} alt="Ilustração " />
+          </div>
+        </div>
+      </section>
 
-            <div className="conteudo-about">
-              <p>Como cheguei até aqui...</p>
-              <h1>Um pouco sobre mim.</h1>
-              <p>
-                Minha jornada na programação começou lá em 2018, quando saí do
-                ensino médio e entrei na faculdade para estudar Ciência da
-                Computação. Nessa época, dei de cara com linguagens como C++,
-                JavaScript, HTML e CSS. Em 2020, precisei dar uma pausa no curso,
-                mas isso não me impediu de continuar aprendendo por conta própria,
-                principalmente na área de front-end.
-              </p>
-              <p>
-                Em 2022, apareceu a chance de participar do Instituto Maria Mercês
-                e concorrer a uma bolsa no Programa Ativa da Saint Gobain. Com
-                essa bolsa, entrei no curso de Análise e Desenvolvimento de
-                Sistemas na FIAP, onde tenho aprimorado meus conhecimentos. Lá,
-                conheci de perto SQL, Python, Java (que é minha favorita), Node,
-                Next.js, Tailwind, React.js (a mesma que usei para fazer este
-                portfólio) e até Machine Learning.
-              </p>
-              <p>
-                Ao longo do caminho, trabalhei junto com meus colegas em desafios
-                propostos pela faculdade. Seis meses após começar na faculdade,
-                consegui uma vaga de estágio na Vivo - Telefônica Brasil, onde
-                tenho aprofundado meus conhecimentos em back-end, que é o caminho
-                que pretendo seguir na carreira. Sou supercuriosa, sempre buscando
-                mais conhecimento e especializações, e assim sigo trilhando minha
-                jornada profissional.
-              </p>
+      <section id="skill">
+        <div className="card">
+          <div className="conteudo">
+            <div className="hard-skill">
+              <div className="texto">
+                <p>Ferramentas que tenho familiaridade</p>
+                <h1>Skills</h1>
+                <h2>Linguagens e Ferramentas</h2>
+              </div>
+              <div className="ferramentas">
+                <div className='images'>
+                  <img className='image' src={javascript} alt="Logo Javascript" />
+                  <img className='image' src={html} alt="Logo HTML 5" />
+                  <img className='image' src={css} alt="Logo CSS 3" />
+                  <img className='image' src={sass} alt="Logo Sass" />
+                  <img className='image' src={react} alt="Logo React.js" />
+                  <img className='image' src={node} alt="Logo Node.js" />
+                  <img className='image' src={cplus} alt="Logo C++" />
+                  <img className='image' src={java} alt="Logo Java" />
+                  <img className='image' src={spring} alt="Logo Spring" />
+                  <img className='image' src={git} alt="Logo Git" />
+                  <img className='image' src={oracle} alt="Logo Oracle" />
+                </div>
+              </div>
+            </div>
+            <div className="soft-skill">
+              <h2>Interpessoais</h2>
+              <div className="skill">
+                <SoftSkill
+                  src="/comunicacao.svg"
+                  alt="Ilustração comunicação"
+                  titulo="Comunicação"
+                  texto="Possuo facilidade em expressar ideias de maneira clara e eficiente."
+                />
+              </div>
+              <div className="skill">
+                <SoftSkill
+                  src="/colaboracao.svg"
+                  alt="Ilustração colaboração"
+                  titulo="Colaboração"
+                  texto="Tenho experiência em colaborar efetivamente com outras equipes e desenvolvedores."
+                />
+              </div>
+              <div className="skill">
+                <SoftSkill
+                  src="/problema.svg"
+                  alt="Ilustração problema"
+                  titulo="Resolução de Problemas e Pensamento Crítico"
+                  texto="Sou habilidoso em avaliar informações criticamente e abordar problemas de maneira lógica."
+                />
+              </div>
+              <div className="skill">
+                <SoftSkill
+                  src="/setas-circulares.svg"
+                  alt="Ilustração Adaptabilidade"
+                  titulo="Adaptabilidade"
+                  texto="Demonstro flexibilidade e a capacidade de me ajustar a mudanças tecnológicas e requisitos."
+                />
+              </div>
+              <div className="skill">
+                <SoftSkill
+                  src="/caderno.svg"
+                  alt="Ilustração Aprendizado"
+                  titulo="Aprendizado Contínuo"
+                  texto="Estou sempre disposta a aprender de forma constante, buscando aprimorar minhas habilidades e conhecimentos."
+                />
+              </div>
             </div>
           </div>
-        </section>
-        <section id="habilidades">
-          <div className="card">
-            <p>Ferramentas que tenho familiaridade</p>
-            <h1>HABILIDADES</h1>
-            <div className="frameworks">
-              <h2>Linguagens</h2>
-              <p></p>
-              <FaJava/><FaJs/>
-            </div>
-
-          </div>
-        </section>
-    </>    
+        </div>
+      </section>
+    </>
   )
 }
 

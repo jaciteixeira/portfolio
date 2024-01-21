@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 import logo from '../assets/logo-white.svg';
 import { FaEnvelope, FaGithubSquare } from 'react-icons/fa';
-import '../styles/Rodape.scss'
+import '../styles/Footer.scss'
 
-function Rodape(){
+function Footer(){
     return(
-        <div>
+        <>
             <footer className="rodape">
                 <Link to="/"> 
                     <img className="logo" src={logo} alt='Logo do site'/>
@@ -20,8 +20,8 @@ function Rodape(){
                     </a>
                 </div>
             </footer>
-        </div>
+        </>
     )
 }
 
-export default Rodape
+export default Footer
