@@ -29,6 +29,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    
+    & .android{
+      background-color: blue;
+    }
     
     & img {
       width: 100%;
@@ -199,36 +204,3 @@
     width: 100px;
   }
 }
-
-/* Estilos gerais */
-
-/* Exemplo: Estilo para todos os elementos */
-.some-element {
-  color: black;
-}
-
-/* Estilos específicos para Android */
-.android .some-element {
-  background-color: lightgreen;
-  color: green;
-}
-
-/* Estilos específicos para iOS */
-.ios .some-element {
-  background-color: lightcyan;
-  color: blue;
-}
-
-/* Estilos específicos para Windows Phone */
-.windows-phone .some-element {
-  background-color: lightcoral;
-  color: orange;
-}
-
-/* Estilos específicos para outros dispositivos */
-.other-device .some-element {
-  background-color: lightgray;
-  color: gray;
-}
-
-/* Restante do seu arquivo de estilos permanece o mesmo */
