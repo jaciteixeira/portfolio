@@ -14,14 +14,13 @@ import spring from '../assets/skills/logo-spring.svg'
 import css from '../assets/skills/logo-css.svg'
 import construcao from '../assets/construcao.svg'
 
-import comunicacao from '../assets/skills/comunicacao.svg'
 import colaboracao from '../assets/skills/colaboracao.svg'
 import problema from '../assets/skills/problema.svg'
 import setas from '../assets/skills/setas-circulares.svg'
 import caderno from '../assets/skills/caderno.svg'
 
 import SoftSkill from "../components/SoftSkill";
-import { compile } from 'sass';
+// import { compile } from 'sass';
 
 const Home = () => {
   
@@ -78,7 +77,7 @@ const Home = () => {
               <h2>Interpessoais</h2>
               <div className="skill">
                 <SoftSkill
-                  src={comunicacao}
+                  src='/comunicacao.svg'
                   alt="Ilustração comunicação"
                   titulo="Comunicação"
                   texto="Possuo facilidade em expressar ideias de maneira clara e eficiente."
