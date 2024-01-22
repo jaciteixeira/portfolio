@@ -14,7 +14,14 @@ import spring from '../assets/skills/logo-spring.svg'
 import css from '../assets/skills/logo-css.svg'
 import construcao from '../assets/construcao.svg'
 
+import comunicacao from '../assets/skills/comunicacao.svg'
+import colaboracao from '../assets/skills/colaboracao.svg'
+import problema from '../assets/skills/problema.svg'
+import setas from '../assets/skills/setas-circulares.svg'
+import caderno from '../assets/skills/caderno.svg'
+
 import SoftSkill from "../components/SoftSkill";
+import { compile } from 'sass';
 
 const Home = () => {
   
@@ -71,7 +78,7 @@ const Home = () => {
               <h2>Interpessoais</h2>
               <div className="skill">
                 <SoftSkill
-                  src="../src/assets/skills/comunicacao.svg"
+                  src={comunicacao}
                   alt="Ilustração comunicação"
                   titulo="Comunicação"
                   texto="Possuo facilidade em expressar ideias de maneira clara e eficiente."
@@ -79,7 +86,7 @@ const Home = () => {
               </div>
               <div className="skill">
                 <SoftSkill
-                  src="../src/assets/skills/colaboracao.svg"
+                  src={colaboracao}
                   alt="Ilustração colaboração"
                   titulo="Colaboração"
                   texto="Tenho experiência em colaborar efetivamente com outras equipes e desenvolvedores."
@@ -87,7 +94,7 @@ const Home = () => {
               </div>
               <div className="skill">
                 <SoftSkill
-                  src="../src/assets/skills/problema.svg"
+                  src={problema}
                   alt="Ilustração problema"
                   titulo="Resolução de Problemas e Pensamento Crítico"
                   texto="Sou habilidoso em avaliar informações criticamente e abordar problemas de maneira lógica."
@@ -95,7 +102,7 @@ const Home = () => {
               </div>
               <div className="skill">
                 <SoftSkill
-                  src="../src/assets/skills/setas-circulares.svg"
+                  src={setas}
                   alt="Ilustração Adaptabilidade"
                   titulo="Adaptabilidade"
                   texto="Demonstro flexibilidade e a capacidade de me ajustar a mudanças tecnológicas e requisitos."
@@ -103,7 +110,7 @@ const Home = () => {
               </div>
               <div className="skill">
                 <SoftSkill
-                  src="../src/assets/skills/caderno.svg"
+                  src={caderno}
                   alt="Ilustração Aprendizado"
                   titulo="Aprendizado Contínuo"
                   texto="Estou sempre disposta a aprender de forma constante, buscando aprimorar minhas habilidades e conhecimentos."
