@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 
 
 export default function SoftSkill(props) {
-  console.log("src:", props.src);
   return (
     <>
       <div className="image">

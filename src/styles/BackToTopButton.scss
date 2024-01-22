@@ -16,6 +16,10 @@
   visibility: hidden;
   transition: opacity 0.3s, visibility 0.3s;
   
+  @media screen and (max-width: 1080px) {
+    display: none;
+  }
+  
   &.visible {
     opacity: 1;
     visibility: visible;
