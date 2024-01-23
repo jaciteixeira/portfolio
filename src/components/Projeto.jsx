@@ -2,29 +2,41 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { FaGithub } from 'react-icons/fa';
 
+import '../styles/Projeto.scss'
+
 const Projeto = (props) => {
   return (
     <>
-      <div>
-        <img className='foto' src={props.src} alt={props.alt} />
-      </div>
-      <div>
-        <h2>{props.titulo}</h2>
-        <p>{props.descritivo}</p>
-        <a href={props.repositorio}>
-          <FaGithub  />
+    <div className='projeto'>
+      
+      <div className='foto'>
+        <a href={props.link}>
+          <img src={props.src} alt={props.alt} />
         </a>
-        <div>
-          {props.linguagens.map((linguagem, index) => (
-            <img key={index} src={linguagem.src} alt={linguagem.alt} />
-          ))}
-        </div>
       </div>
+      <div className='linguagens'>
+        <p>LINGUAGENS UTILIZADAS:</p>
+        {props.linguagens.map((linguagem, index) => (
+          <img key={index} src={linguagem.src} alt={linguagem.alt} />
+          
+        ))}
+      </div>
+      <div className='texto'>
+        <h2>
+          {props.titulo} {" "}
+          <a href={props.repositorio}></a>
+        </h2>
+        <p>
+          {props.descritivo}
+        </p>
+      </div>
+    </div>
     </>
   );
 };
 
 Projeto.propTypes = {
+  link: PropTypes.string.isRequired,
   src: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,
   titulo: PropTypes.string.isRequired,
