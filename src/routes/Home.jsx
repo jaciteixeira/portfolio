@@ -1,6 +1,7 @@
 import React from 'react';
 import SoftSkill from "../components/SoftSkill";
 import Projeto from '../components/Projeto';
+import Footer from '../components/Footer.jsx';
 
 import imageIntro from "../assets/image-mulher-sentada.svg";
 import cplus from '../assets/skills/logo-c++.svg';
@@ -16,6 +17,7 @@ import sass from '../assets/skills/logo-sass.svg';
 import spring from '../assets/skills/logo-spring.svg';
 
 import caderno from '../assets/skills/caderno.svg';
+import comunicacao from '../assets/skills/comunicacao.svg';
 import colaboracao from '../assets/skills/colaboracao.svg';
 import problema from '../assets/skills/problema.svg';
 import setas from '../assets/skills/setas-circulares.svg';
@@ -76,7 +78,7 @@ const Home = () => {
               <h2>Interpessoais</h2>
               <div className="skill">
                 <SoftSkill
-                  src='/comunicacao.svg'
+                  src={comunicacao}
                   alt="Ilustração comunicação"
                   titulo="Comunicação"
                   texto="Possuo facilidade em expressar ideias de maneira clara e eficiente."
@@ -129,6 +131,19 @@ const Home = () => {
             <Projeto
               src={vigiasaude}
               alt="Descrição da imagem"
+              titulo="Vigia Saude"
+              descritivo="Projeto desenvolvido com proposito acadêmico. Esta aplicação foi dedicada ao monitoramento de casos de doenças
+              tropicais muitas vezes negligenciadas no Brasil. Back-end desenvolvido com Java, front-end desenvolvido em next.js"
+              repositorio='#'
+              linguagens={[
+                { src: react, alt: 'React' },
+                { src: java, alt: 'Java' },
+                { src: sass, alt: 'Sass' },
+              ]}
+            />
+            <Projeto
+              src={vigiasaude}
+              alt="Descrição da imagem"
               link="#"
               titulo="Vigia Saude"
               descritivo="Projeto desenvolvido com proposito acadêmico. Esta aplicação foi dedicada ao monitoramento de casos de doenças
@@ -143,6 +158,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <Footer />
     </>
   )
 }

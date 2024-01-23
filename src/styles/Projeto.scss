@@ -1,5 +1,5 @@
 .projeto{
-    background-color: #ffe8c3;
+    background-color: #f8dcae;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,32 +14,34 @@
 
     .foto{
         
-        a{
+        img{
             display: flex;
             justify-content: center;
-            img{
-                border: 2px solid #826357;
-                border-radius: 15px;
-                width: 100%;
-                padding: 1%;
-                box-shadow: inset;
-            }
+            border: 2px solid #826357;
+            border-radius: 15px;
+            width: 100%;
+            box-shadow: inset;
         }
     } 
     .linguagens{
-        // color: #fff;
         font-weight: 800;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         gap: 1%;
-        flex-wrap: wrap;
-        width: 90%;
+        width: 70%;
         p{
             max-width: 28%;
         }
-        img{
-            width: 2em;
+        .images{
+            display: flex;
+
+            img{
+                width: 2em;
+            }
+        }
+        @media screen and (max-width: 555px){
+            justify-content: space-around;
         }
     }
     
@@ -50,8 +52,36 @@
         h2{
             font-size: 3em;
         }
-
     }
+
+    .botoes{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 5%;
+        
+        a{
+            text-decoration: none;
+            color: #251915;
+            button{
+                background-color: #d4ba90;
+                padding: 10px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                font-size: 1.8em;
+                border-radius: 7px;
+                border: 2px solid #826357;
+                cursor: pointer;
+                transition: background-color 0.5s;
+                font-weight: 600;
+            }
+            :hover{
+                background-color: #826357;
+            }
+        }
+    }
+
     @media screen and (max-width: 1260px){
         width: 45%;
         @media screen and (max-width: 900px){

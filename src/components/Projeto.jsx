@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { IoGitBranch } from "react-icons/io5";
+import { VscGithub as Github} from "react-icons/vsc";
+import { LiaGitter as Site } from "react-icons/lia";
+import { CgWebsite as Website } from "react-icons/cg";
 
 import '../styles/Projeto.scss'
 
@@ -8,18 +10,18 @@ const Projeto = (props) => {
   return (
     <>
     <div className='projeto'>
-      
       <div className='foto'>
-        <a href={props.link}>
           <img src={props.src} alt={props.alt} />
-        </a>
+        {/* <a href={props.link}>
+        </a> */}
       </div>
       <div className='linguagens'>
         <p>LINGUAGENS UTILIZADAS:</p>
-        {props.linguagens.map((linguagem, index) => (
-          <img key={index} src={linguagem.src} alt={linguagem.alt} />
-          
-        ))}
+        <div className='images'>
+          {props.linguagens.map((linguagem, index) => (
+            <img key={index} src={linguagem.src} alt={linguagem.alt} />
+          ))}
+        </div>
       </div>
       <div className='texto'>
         <h2>
@@ -30,11 +32,22 @@ const Projeto = (props) => {
           {props.descritivo}
         </p>
       </div>
-      <div>
-        <button>
-          <IoGitBranch />
-        </button>
+      <div className='botoes'>
+        <a href={props.repositorio}>
+          <button>
+            <Github />
+            GitHub
+          </button>
+        </a>
 
+        {props.link && ( // Verifica se o link de demonstração existe
+          <a href={props.link}>
+            <button>
+              <Website />
+              Demo
+            </button>
+          </a>
+        )}
       </div>
     </div>
     </>

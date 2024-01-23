@@ -3,13 +3,18 @@ import { Link } from "react-router-dom";
 import logo from '/logo.svg';
 import '../styles/Header.scss';
 
+import { CiMenuFries as Hamburger } from "react-icons/ci";
+import { TfiClose as CloseIcon } from "react-icons/tfi";
+import { CgGitFork } from "react-icons/cg";
+import { MdOutlineStar } from "react-icons/md";
 import { 
-  FaBars as Hamburger, 
-  FaTimes as CloseIcon 
-} from 'react-icons/fa';
-import { IoGitBranch } from "react-icons/io5";
-import { DiGithubFull } from "react-icons/di";
-import { TbFlower } from "react-icons/tb";
+  PiLightbulbFilamentLight as Skill,
+  PiHouseLight as Home,
+  PiDesktopLight as Project,
+  PiUserLight as About,
+} from "react-icons/pi";
+import { HiOutlineAcademicCap as Education } from "react-icons/hi2";
+
 
 export default function Header(){
 
@@ -55,18 +60,16 @@ export default function Header(){
               <img className="logo" src={logo} alt='Logo do site'/>
           </Link>
           <div className={`links ${isActive ? "active" : "inactive"}`} ref={dropDownRef}>
-              <Link className="link" to="/" onClick={() => {scrollToSection("intro"); close();}}>Home</Link>
-              <Link className="link" to="/" onClick={() => {scrollToSection("skill"), close();}}>Habilidades</Link>
-              <Link className="link" to="/" onClick={() => {scrollToSection("projects"), close();}}>Projetos</Link>
-              <Link className="link" to="/about" onClick={() => close()} >Sobre</Link>
-              <Link className="link" to="/education" onClick={() => close()}>Formação</Link>
+              <Link className="link" to="/" onClick={() => {scrollToSection("intro"); close();}}> <Home/> Home</Link>
+              <Link className="link" to="/" onClick={() => {scrollToSection("skill"), close();}}> <Skill/> Habilidades</Link>
+              <Link className="link" to="/" onClick={() => {scrollToSection("projects"), close();}}><Project/> Projetos</Link>
+              <Link className="link" to="/about" onClick={() => close()}> <About/> Sobre</Link>
+              <Link className="link" to="/education" onClick={() => close()}> <Education/> Formação</Link>
               
               <button>
-                <a href="#">
-                  GitHub
-                  {/* <DiGithubFull/> */}
-                  {/* <TbFlower/> */}
-                  <IoGitBranch/> 
+                <a href="https://github.com/jaciteixeira/portfolio" target='_blank'>
+                  <CgGitFork /> 
+                  <MdOutlineStar/>
                 </a>
               </button>
           </div>

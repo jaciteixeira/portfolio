@@ -10,6 +10,7 @@
   align-items: center;
   padding: 2%;
   justify-content: space-between;
+  padding: 0 50px;
 
   .logo {
     width: 80%;
@@ -19,31 +20,43 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // margin-right: 50px;
-    width: 50%;
+    width: 57%;
+    // animation: linha 0.3s ease-in-out forwards;
     
     .link {
+      display: flex;
+      gap: 5px;
       text-decoration: none;
       color: #242424;
       transition: border-bottom 0.5s, font-size 0.5s, font-weight 0.5s;
-
       &:hover {
         font-size: 110%;
-        border-bottom: 1px solid #b8a052;
+        border-bottom: 1px solid #826357;
         font-weight: 600;
       }
     }
 
     button{
-      background-color: #826357;
-      width: 8%;
-      border-radius: 5px;
+      background-color: #baa59c;
+      display: flex;
+      justify-content: center;
+      border-radius: 10px;
+      border: 2px solid #826357;
+      cursor: pointer;
+      
       a{
+        width: 5em;
         padding: 8px;
         color: #faf8f2;
-        font-size: 1.7em;
-        // width: 15em;
-
+        font-size: 1.5em;
+        border-radius: 7px;
+        display: flex;
+        justify-content: center;
+        gap: 15%;
+        transition: background-color 0.3s;
+      }
+      :hover{
+        background-color: #826357;
       }
     }
 
@@ -56,9 +69,9 @@
     display: flex;
     align-self: center;
     flex-direction: column;
-    align-items: center;
+    // align-items: center;
     position: absolute;
-    width: 95%;
+    width: 90%;
     top: 100%;
     gap: 20px;
     padding: 2%;
@@ -66,6 +79,10 @@
     background-color: rgba(130, 99, 87, 0.8);
     border-radius: 8px;
     animation: fadeIn 0.3s ease-in-out forwards;
+    .link{
+      margin: 3px;
+      border-bottom: 3px solid #f1c6b5;
+    }
   }
   
   @keyframes fadeIn {

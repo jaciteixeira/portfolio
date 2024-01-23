@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Outlet } from "react-router-dom";
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
 import WhatsappIcon from "./components/WhatsappIcon";
@@ -15,7 +14,6 @@ import {
   BrowserRouter as Router,
   Route,
   Routes,
-  Navigate
 } from "react-router-dom";
 import "./App.scss";
 
@@ -47,7 +45,7 @@ export default function App() {
         <WhatsappIcon />
         <BackToTopButton />
       </section>
-      <Footer />
+      {/* <Footer /> */}
     </Router>
   </div>
   );
