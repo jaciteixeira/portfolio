@@ -30,7 +30,7 @@ export default function WhatsappIcon(){
   }, []);
 
   return (
-    <div className={`whatsapp-icon ${deslocamento ? 'deslocado' : ''} ${deslocamentoRodape ? 'deslocamentoRodape' : ''}`}>
+    <div id='whatsapp-icon' className={`whatsapp-icon ${deslocamento ? 'deslocado' : ''} ${deslocamentoRodape ? 'deslocamentoRodape' : ''}`}>
       <a href="https://api.whatsapp.com/send?phone=5511967208527" target="_blank" rel="noopener noreferrer">
         <FaWhatsapp />
       </a>

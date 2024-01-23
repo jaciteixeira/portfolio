@@ -1,26 +1,25 @@
-import React, { useEffect } from 'react'
+import React from 'react';
+import SoftSkill from "../components/SoftSkill";
+import Projeto from '../components/Projeto';
 
 import imageIntro from "../assets/image-mulher-sentada.svg";
-import react from '../assets/skills/logo-react.svg'
-import cplus from '../assets/skills/logo-c++.svg'
-import git from '../assets/skills/logo-git.svg'
-import html from '../assets/skills/logo-html.svg'
-import java from '../assets/skills/logo-java.svg'
-import javascript from '../assets/skills/logo-javascript.svg'
-import node from '../assets/skills/logo-node-js.svg'
-import oracle from '../assets/skills/logo-oracle.svg'
-import sass from '../assets/skills/logo-sass.svg'
-import spring from '../assets/skills/logo-spring.svg'
-import css from '../assets/skills/logo-css.svg'
-import construcao from '../assets/construcao.svg'
+import cplus from '../assets/skills/logo-c++.svg';
+import css from '../assets/skills/logo-css.svg';
+import git from '../assets/skills/logo-git.svg';
+import html from '../assets/skills/logo-html.svg';
+import java from '../assets/skills/logo-java.svg';
+import javascript from '../assets/skills/logo-javascript.svg';
+import node from '../assets/skills/logo-node-js.svg';
+import oracle from '../assets/skills/logo-oracle.svg';
+import react from '../assets/skills/logo-react.svg';
+import sass from '../assets/skills/logo-sass.svg';
+import spring from '../assets/skills/logo-spring.svg';
 
-import colaboracao from '../assets/skills/colaboracao.svg'
-import problema from '../assets/skills/problema.svg'
-import setas from '../assets/skills/setas-circulares.svg'
-import caderno from '../assets/skills/caderno.svg'
-
-import SoftSkill from "../components/SoftSkill";
-// import { compile } from 'sass';
+import caderno from '../assets/skills/caderno.svg';
+import colaboracao from '../assets/skills/colaboracao.svg';
+import problema from '../assets/skills/problema.svg';
+import setas from '../assets/skills/setas-circulares.svg';
+import vigiasaude from '../assets/images/vigiasaude-home.png'
 
 const Home = () => {
   
@@ -122,9 +121,38 @@ const Home = () => {
 
       <section id="projects">
         <div className="card">
-        <h1>SECTION EM CONSTRUÇÃO</h1>
-        <img src={construcao} alt="Em Construção" />
-
+          <div className='titulo'>
+            <p>Destaques</p>
+            <h1>Projetos</h1>
+          </div>
+          <div className='div-projeto'>
+            <Projeto
+              src={vigiasaude}
+              alt="Descrição da imagem"
+              titulo="Vigia Saude"
+              descritivo="Projeto desenvolvido com proposito acadêmico. Esta aplicação foi dedicada ao monitoramento de casos de doenças
+              tropicais muitas vezes negligenciadas no Brasil. Back-end desenvolvido com Java, front-end desenvolvido em next.js"
+              repositorio='#'
+              linguagens={[
+                { src: react, alt: 'React' },
+                { src: java, alt: 'Java' },
+                { src: sass, alt: 'Sass' },
+              ]}
+            />
+            <Projeto
+              src={vigiasaude}
+              alt="Descrição da imagem"
+              titulo="Vigia Saude"
+              descritivo="Projeto desenvolvido com proposito acadêmico. Esta aplicação foi dedicada ao monitoramento de casos de doenças
+              tropicais muitas vezes negligenciadas no Brasil. Back-end desenvolvido com Java, front-end desenvolvido em next.js"
+              repositorio='#'
+              linguagens={[
+                { src: react, alt: 'React' },
+                { src: java, alt: 'Java' },
+                { src: sass, alt: 'Sass' },
+              ]}
+            />
+          </div>
         </div>
 
       </section>

@@ -167,23 +167,50 @@
 }
 
 #projects {
-
+  background-color: #f8f3e4;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  // align-items: center;
+  
+  & > * {
+    max-width: 1900px;
+  }
+  
   .card{
-    width: 100%;
+    background-color: lightblue;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    height: 600px;
-    background-color: #f8f3e4;
-    img {
-      width: 100px;
+
+    .titulo{
+      background-color: #fff;
+
+      p{
+        font-size: 1.3em;
+      }
+      h1{
+        font-size: 4.5em;
+      }
+    }
+
+    .div-projeto{
+      display: flex;
+      // justify-content: center;
+      align-items: center;
+      width: 50%;
+       gap: 10px;
+      .foto{
+        width: 27em;
+      }
+
     }
   }
 }
 
 #about{
-    
+  
+  height: 100%;
+
   & > *{
     max-width: 1900px;
   }
