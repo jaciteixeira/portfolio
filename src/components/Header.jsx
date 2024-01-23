@@ -7,6 +7,9 @@ import {
   FaBars as Hamburger, 
   FaTimes as CloseIcon 
 } from 'react-icons/fa';
+import { IoGitBranch } from "react-icons/io5";
+import { DiGithubFull } from "react-icons/di";
+import { TbFlower } from "react-icons/tb";
 
 export default function Header(){
 
@@ -57,6 +60,15 @@ export default function Header(){
               <Link className="link" to="/" onClick={() => {scrollToSection("projects"), close();}}>Projetos</Link>
               <Link className="link" to="/about" onClick={() => close()} >Sobre</Link>
               <Link className="link" to="/education" onClick={() => close()}>Formação</Link>
+              
+              <button>
+                <a href="#">
+                  GitHub
+                  {/* <DiGithubFull/> */}
+                  {/* <TbFlower/> */}
+                  <IoGitBranch/> 
+                </a>
+              </button>
           </div>
           <div
               className="hamburger" 

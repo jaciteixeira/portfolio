@@ -138,63 +138,6 @@ const Home = () => {
                 { src: react, alt: 'React' },
                 { src: java, alt: 'Java' },
                 { src: sass, alt: 'Sass' },
-                { src: java, alt: 'Java' },
-                { src: sass, alt: 'Sass' },
-                { src: java, alt: 'Java' },
-              ]}
-            />
-            <Projeto
-              src={vigiasaude}
-              alt="Descrição da imagem"
-              link="#"
-              titulo="Vigia Saude"
-              descritivo="Projeto desenvolvido com proposito acadêmico. Esta aplicação foi dedicada ao monitoramento de casos de doenças
-              tropicais muitas vezes negligenciadas no Brasil. Back-end desenvolvido com Java, front-end desenvolvido em next.js"
-              repositorio='#'
-              linguagens={[
-                { src: react, alt: 'React' },
-                { src: java, alt: 'Java' },
-                { src: sass, alt: 'Sass' },
-              ]}
-            />
-            <Projeto
-              src={vigiasaude}
-              alt="Descrição da imagem"
-              link="#"
-              titulo="Vigia Saude"
-              descritivo="Projeto desenvolvido com proposito acadêmico. Esta aplicação foi dedicada ao monitoramento de casos de doenças
-              tropicais muitas vezes negligenciadas no Brasil. Back-end desenvolvido com Java, front-end desenvolvido em next.js"
-              repositorio='#'
-              linguagens={[
-                { src: react, alt: 'React' },
-                { src: java, alt: 'Java' },
-                { src: sass, alt: 'Sass' },
-              ]}
-            />
-            <Projeto
-              src={vigiasaude}
-              alt="Descrição da imagem"
-              link="#"
-              titulo="Vigia Saude"
-              descritivo="Projeto desenvolvido com proposito acadêmico. Esta aplicação foi dedicada ao monitoramento de casos de doenças
-              tropicais muitas vezes negligenciadas no Brasil. Back-end desenvolvido com Java, front-end desenvolvido em next.js"
-              repositorio='#'
-              linguagens={[
-                { src: java, alt: 'Java' },
-              ]}
-            />
-            <Projeto
-              src={vigiasaude}
-              alt="Descrição da imagem"
-              link="#"
-              titulo="Vigia Saude"
-              descritivo="Projeto desenvolvido com proposito acadêmico. Esta aplicação foi dedicada ao monitoramento de casos de doenças
-              tropicais muitas vezes negligenciadas no Brasil. Back-end desenvolvido com Java, front-end desenvolvido em next.js"
-              repositorio='#'
-              linguagens={[
-                { src: react, alt: 'React' },
-                { src: java, alt: 'Java' },
-                { src: sass, alt: 'Sass' },
               ]}
             />
           </div>

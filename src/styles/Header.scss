@@ -18,7 +18,8 @@
   .links {
     display: flex;
     justify-content: space-between;
-    margin-right: 50px;
+    align-items: center;
+    // margin-right: 50px;
     width: 50%;
     
     .link {
@@ -30,6 +31,19 @@
         font-size: 110%;
         border-bottom: 1px solid #b8a052;
         font-weight: 600;
+      }
+    }
+
+    button{
+      background-color: #826357;
+      width: 8%;
+      border-radius: 5px;
+      a{
+        padding: 8px;
+        color: #faf8f2;
+        font-size: 1.7em;
+        // width: 15em;
+
       }
     }
 

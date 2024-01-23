@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { FaGithub } from 'react-icons/fa';
+import { IoGitBranch } from "react-icons/io5";
 
 import '../styles/Projeto.scss'
 
@@ -29,6 +29,12 @@ const Projeto = (props) => {
         <p>
           {props.descritivo}
         </p>
+      </div>
+      <div>
+        <button>
+          <IoGitBranch />
+        </button>
+
       </div>
     </div>
     </>
