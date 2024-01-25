@@ -44,8 +44,8 @@ export default function App() {
       <section id="icons-rodape">
         <WhatsappIcon />
         <BackToTopButton />
+      <Footer />
       </section>
-      {/* <Footer /> */}
     </Router>
   </div>
   );
