@@ -1,11 +1,8 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import Footer from '../components/Footer';
 import Certificado from '../components/Certificado';
 import certificadoFiap from '../assets/certificado/certificado-fiap.svg';
 import certificadoFiapWeb from '../assets/certificado/certificado-fiap-web.svg';
 import certificadoSwagger from '../assets/certificado/CursoSwagger.png';
-// import './Education.css'; // Assuming you have a separate CSS file for styling
 
 export default function Education() {
   const certificados = [

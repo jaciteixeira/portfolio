@@ -67,7 +67,7 @@ export default function Header(){
               <Link className="link" to="/education" onClick={() => close()}> <Education/> Formação</Link>
               
               <button>
-                <a href="https://github.com/jaciteixeira/portfolio" target='_blank'>
+                <a href="https://github.com/jaciteixeira/" target='_blank'>
                   <CgGitFork /> 
                   <MdOutlineStar/>
                 </a>

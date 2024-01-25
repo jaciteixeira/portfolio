@@ -51,18 +51,8 @@ function About(){
           mais conhecimento e especializações, e assim sigo trilhando minha
           jornada profissional.
         </p>
-        <p>
-          📔 Ao longo do caminho, trabalhei junto com meus colegas em desafios
-          propostos pela faculdade. Seis meses após começar na faculdade,
-          consegui uma vaga de estágio na Vivo - Telefônica Brasil, onde
-          tenho aprofundado meus conhecimentos em back-end, que é o caminho
-          que pretendo seguir na carreira. Sou supercuriosa, sempre buscando
-          mais conhecimento e especializações, e assim sigo trilhando minha
-          jornada profissional.
-        </p>
       </div>
     </div>
-    {/* <Footer/> */}
   </section>
   )
 }
