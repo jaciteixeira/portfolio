@@ -33,7 +33,7 @@ const Projeto = (props) => {
         </p>
       </div>
       <div className='botoes'>
-        <a href={props.repositorio}>
+        <a href={props.repositorio} target='_blank'>
           <button>
             <Github />
             GitHub
@@ -41,7 +41,7 @@ const Projeto = (props) => {
         </a>
 
         {props.link && ( // Verifica se o link de demonstração existe
-          <a href={props.link}>
+          <a href={props.link} target='_blank'>
             <button>
               <Website />
               Demo
