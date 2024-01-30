@@ -1,20 +1,22 @@
-import Header from "./components/Header.jsx";
-import Footer from "./components/Footer.jsx";
-import WhatsappIcon from "./components/WhatsappIcon";
-import BackToTopButton from "./components/BackToTopButton";
-import About from './routes/About.jsx';
-import Home from './routes/Home.jsx';
-import Education from "./routes/Education.jsx";
+import "./styles/App.scss";
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css'
+
+import BackToTopButton from "./components/BackToTopButton";
+import Footer from "./components/Footer.jsx";
+import Header from "./components/Header.jsx";
+import WhatsappIcon from "./components/WhatsappIcon";
+import About from './routes/About.jsx';
+import Education from "./routes/Education.jsx";
+import Home from './routes/Home.jsx';
+import NotFound from './routes/NotFound.jsx';
 
 import {
-  BrowserRouter as Router,
   Route,
+  BrowserRouter as Router,
   Routes,
 } from "react-router-dom";
-import "./App.scss";
 
 export default function App() {
   
@@ -35,11 +37,11 @@ export default function App() {
       <Header/>
       <Routes>
         <Route path= "/" element= {<Home/>}/>
-        <Route path= "home" element= {<Home/>}/>
-        <Route path= "portfolio" element= {<Home/>}/>
-        <Route path= "about" element= {<About/>}/>
-        <Route path= "education" element= {<Education/>}/>
-        <Route path= "*" element= {<Home/>}/>
+        <Route path= "/home" element= {<Home/>}/>
+        <Route path= "/portfolio" element= {<Home/>}/>
+        <Route path= "/about" element= {<About/>}/>
+        <Route path= "/education" element= {<Education/>}/>
+        <Route path= "*" element= { <NotFound/> }/>
       </Routes>
       <section id="icons-rodape">
         <WhatsappIcon />

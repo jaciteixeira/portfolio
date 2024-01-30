@@ -47,13 +47,13 @@ export default function Education() {
       url: 'https://cursos.alura.com.br/user/jaci9306/course/react-desenvolvendo-javascript/certificate',
       alt: 'Certificado Curso REACT: DESENVOLVENDO COM JAVASCRIPT',
       src: certificadoReact,
-      descricao: 'REACT: DESENVOLVENDO COM JAVASCRIPT',
+      descricao: 'React: Desenvolvendo com JavaScript',
     },
     {
       url: 'https://cursos.alura.com.br/user/jaci9306/course/react-componentes-funcionam/certificate',
       alt: 'Certificado Curso REACT: COMO OS COMPONENTES FUNCIONAM',
       src: certificadoReactComponents,
-      descricao: 'REACT: DESENVOLVENDO COM JAVASCRIPT',
+      descricao: 'React: Como os componentes funcionam',
     },
 
   ]

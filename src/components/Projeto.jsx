@@ -55,7 +55,7 @@ const Projeto = (props) => {
 };
 
 Projeto.propTypes = {
-  link: PropTypes.string.isRequired,
+  link: PropTypes.string,
   src: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,
   titulo: PropTypes.string.isRequired,

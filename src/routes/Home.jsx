@@ -31,7 +31,7 @@ const Home = () => {
           <div className="card-texto">
             <h2>Desenvolvedora de Software </h2>
             <p>
-              Meu nome é Jaci Teixeira, e sou uma desenvolvedora Full Stack com
+              Meu nome é Jaci Teixeira, sou uma desenvolvedora Full Stack com
               ênfase no back-end. Possuo experiência no desenvolvimento de
               aplicações com API REST, utilizando técnicas avançadas de
               codificação. Minhas habilidades incluem o domínio de ferramentas

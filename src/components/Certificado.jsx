@@ -7,8 +7,8 @@ export default function Certificado(props){
         <div className="certificados">
           <h2> {props.titulo} </h2>
             {props.certificados.map((certificado, index) => (
-              <div className="certificado" >
-                <a key={index} href={certificado.url} target="_blank" >
+              <div className="certificado" key={index} >
+                <a href={certificado.url} target="_blank" >
                   <img src={certificado.src} alt={certificado.alt} />
                 </a>
                 <p> {certificado.descricao} </p>
@@ -19,9 +19,8 @@ export default function Certificado(props){
     )
 }
 
-Certificado.PropTypes = {
-    titulo: PropTypes.string.isRequired, 
-    descricao: PropTypes.string.isRequired, 
+Certificado.propTypes = {
+    titulo: PropTypes.string.isRequired,
     certificados: PropTypes.arrayOf(
         PropTypes.shape({
             src: PropTypes.string.isRequired, 

@@ -1,0 +1,48 @@
+.notfound {
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+
+    img {
+        width: 100px;
+    }
+
+    .texto404 {
+        display: block;
+        font-family: "Electrolize", sans-serif;
+        font-size: 6rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+    }
+
+    .botao {
+        display: inline-block;
+        border-radius: 15px;
+        padding: 0.55rem 1.3rem;
+        font-size: 1.125rem;
+        line-height: 1rem;
+        font-weight: 400;
+        background-color: #efd8be;
+        border: 3px solid #ceb291;
+        cursor: pointer;
+        transition: 0.2s;
+        margin-bottom: 25px;
+    }
+}
+@media screen and (max-width: 315px){
+    .conteudo{
+        .texto404{
+            font-size: 5rem;
+        }
+        h2{
+            font-size: 1.125rem;
+        }
+    }
+}
