@@ -15,11 +15,11 @@
   display: flex;
   justify-content: center;
 
-  > *{ //estilo que aplica a todos os filhos direto
+  > *{
     max-width: 1900px;
   }
   
-  & .card{ //mesmo que escrever "#intro .card{}"
+  & .card{
     background-color: #f8f3e4;
     width: 85%;
     border-radius: 30px;
@@ -110,7 +110,6 @@
         margin-bottom: 15px;
 
         & .texto{
-          // width: 90%;
           display: flex;
           flex-direction: column;  
           
@@ -205,7 +204,7 @@
 }
 
 #about{
-  // height: 100%;
+  
   & > *{
     max-width: 1900px;
   }
@@ -274,27 +273,21 @@
 }
 
 #education {
-  // background-color: #d4ba90;
   display: flex;
   justify-content: center;
-  // height: 80%;
 
   > * {
     max-width: 1900px;
   }
 
   .card {
-    // background-color: lightblue;
     width: 95%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 2%;
-    // padding: 2%;
 
     .texto {
-      // background-color: lightcoral;
-      // text-align: center;
       padding: 20px;
       margin-bottom: 3em;
 
@@ -307,37 +300,9 @@
       h2 {
         font-size: 36px;
         color: #333;
-      }
-    }
-
-    .certificados {
-      background-color: #ded6bd;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      border-radius: 8px;
-      margin-top: 20px;
-      padding: 2%;
-
-      .certificado {
-        // background-color: #8d6a00;
-        width: 30%;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        overflow: hidden;
-
-        a {
-          display: block;
-          text-decoration: none;
-        }
-
-        img {
-          width: 100%;
-          height: auto;
-        }
-        @media screen and (max-width: 1080px){
-          width: 75%;
+        font-size: 3rem;
+        @media screen and (max-width: 450px){
+          font-size: 1.9em;
         }
       }
     }

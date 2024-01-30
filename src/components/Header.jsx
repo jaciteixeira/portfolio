@@ -7,12 +7,13 @@ import { CiMenuFries as Hamburger } from 'react-icons/ci';
 import { TfiClose as CloseIcon } from 'react-icons/tfi';
 import { CgGitFork } from 'react-icons/cg';
 import { MdOutlineStar } from 'react-icons/md';
-import {
-  PiLightbulbFilamentLight as Skill,
-  PiHouseLight as Home,
-  PiDesktopLight as Project,
-} from 'react-icons/pi';
-import { HiOutlineAcademicCap as Education } from 'react-icons/hi2';
+import { 
+  HiOutlineAcademicCap as Education,
+  HiOutlineComputerDesktop as Project ,
+  HiOutlineHome as Home,
+  HiOutlineLightBulb as Skill ,
+  HiOutlineUser as User ,
+} from 'react-icons/hi2';
 
 export default function Header() {
   
@@ -20,7 +21,6 @@ export default function Header() {
   const [activeSection, setActiveSection] = useState('intro');
   const [isActive, setIsActive] = useState(false);
   const dropDownRef = useRef(null);
-  console.log(activeSection)
 
   const onClick = (event) => {
     event.stopPropagation();
@@ -128,7 +128,7 @@ export default function Header() {
             to="/about"
             onClick={() => close()}
           >
-            Sobre
+            <User/> Sobre
           </Link>
           <Link
             className={`link ${

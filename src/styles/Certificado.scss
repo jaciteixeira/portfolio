@@ -1,0 +1,60 @@
+.certificados {
+  background-color: #e8d7bd;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 1%;
+  margin: 1%;
+  border-radius: 15px;
+
+  h2 {
+    font-size: 2em;
+    text-align: center;
+    width: 100%;
+    margin: 20px;
+    color: #41332e;
+    border-bottom: 2px solid #41332e ;
+  }
+
+  .certificado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    width: 30%;
+    border: 2px solid #826357;
+    margin: 0 auto;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+
+      img {
+        display: flex;
+        justify-content: center;
+        border: 2px solid #826357;
+        border-radius: 15px;
+        width: 100%;
+        box-shadow: inset;
+      }
+    }
+    p {
+      color: #41332e;
+      width: 86%;
+      font-size: 1.3em;
+      text-align: center;
+
+      @media screen and (max-width: 450px) {
+        font-size: 1em;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1080px) {
+    .certificado {
+      width: 75%;
+    }
+  }
+}

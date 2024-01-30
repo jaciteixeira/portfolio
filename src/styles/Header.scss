@@ -39,7 +39,7 @@
     .linkDestacado {
       font-size: 110%;
       border-bottom: 1px solid #826357;
-      font-weight: 600;
+      font-weight: 900;
     }
 
     button{
@@ -81,13 +81,22 @@
     top: 100%;
     gap: 20px;
     padding: 2%;
-    font-weight: 1000;
+    font-weight: 700;
     background-color: rgba(130, 99, 87, 0.8);
     border-radius: 8px;
     animation: fadeIn 0.3s ease-in-out forwards;
     .link{
       margin: 3px;
-      border-bottom: 3px solid #f1c6b5;
+      border-bottom: 1px solid #f1c6b5;
+    }
+  }
+  @media screen and (max-width: 450px){
+    // background-color: lightcoral;
+    flex-direction: column;
+    height: 5.5em;
+    // align-items: center;
+    .logo{
+      width: 100%;
     }
   }
   
