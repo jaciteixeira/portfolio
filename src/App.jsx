@@ -40,6 +40,7 @@ export default function App() {
         <Route path= "portfolio" element= {<Home/>}/>
         <Route path= "about" element= {<About/>}/>
         <Route path= "education" element= {<Education/>}/>
+        <Route path= "*" element= {<Home/>}/>
       </Routes>
       <section id="icons-rodape">
         <WhatsappIcon />
