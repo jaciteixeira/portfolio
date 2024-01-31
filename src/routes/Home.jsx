@@ -14,14 +14,18 @@ import oracle from "../assets/skills/logo-oracle.svg";
 import react from "../assets/skills/logo-react.svg";
 import sass from "../assets/skills/logo-sass.svg";
 import spring from "../assets/skills/logo-spring.svg";
+import python from "../assets/skills/logo-python.svg";
+import mysql from "../assets/skills/logo-mysql.svg";
 
 import caderno from "../assets/skills/caderno.svg";
 import comunicacao from "../assets/skills/comunicacao.svg";
 import colaboracao from "../assets/skills/colaboracao.svg";
 import problema from "../assets/skills/problema.svg";
 import setas from "../assets/skills/setas-circulares.svg";
+
 import vigiasaude from "../assets/images/vigiasaude-home.png";
 import nexiobike from "../assets/images/nexio-bike.svg";
+import projetoConstrucao from "../assets/images/projeto-construcao.svg";
 
 const Home = () => {
   return (
@@ -67,9 +71,11 @@ const Home = () => {
                   <img className="image" src={react} alt="Logo React.js" />
                   <img className="image" src={node} alt="Logo Node.js" />
                   <img className="image" src={cplus} alt="Logo C++" />
+                  <img className="image" src={python} alt="Logo Python" />
                   <img className="image" src={java} alt="Logo Java" />
                   <img className="image" src={spring} alt="Logo Spring" />
                   <img className="image" src={git} alt="Logo Git" />
+                  {/* <img className="image" src={mysql} alt="Logo MySQL" /> */}
                   <img className="image" src={oracle} alt="Logo Oracle" />
                 </div>
               </div>
@@ -139,6 +145,8 @@ const Home = () => {
                 { src: html, alt: "HTML" },
                 { src: css, alt: "Css" },
                 { src: javascript, alt: "JavaScript" },
+                { src: java, alt: "Java" },
+                { src: oracle, alt: "SQL Oracle" },
               ]}
             />
             <Projeto
@@ -146,12 +154,24 @@ const Home = () => {
               alt="Home da página"
               titulo="Vigia Saude"
               descritivo="Projeto desenvolvido com proposito acadêmico. Esta aplicação foi dedicada ao monitoramento de casos de doenças
-              tropicais muitas vezes negligenciadas no Brasil. Back-end desenvolvido com Java, front-end desenvolvido em next.js"
+              tropicais muitas vezes negligenciadas no Brasil. Back-end desenvolvido com Java, front-end desenvolvido em next.js."
               repositorio="https://github.com/orgs/Logic-Ware/repositories"
               linguagens={[
                 { src: react, alt: "React" },
                 { src: java, alt: "Java" },
                 { src: sass, alt: "Sass" },
+                { src: oracle, alt: "SQL Oracle" },
+              ]}
+            />
+            <Projeto
+              src={projetoConstrucao}
+              alt="Ilustração de uma aplicação em construção"
+              titulo="Sistema para Hotel"
+              descritivo="Atualmente em fase de desenvolvimento, que incorpora os princípios da programação orientada a objetos, design gráfico intuitivo e banco de dados. Objetivo é proporcionar uma solução completa e eficiente para simplificar as operações hoteleiras."
+              repositorio="https://github.com/jaciteixeira"
+              linguagens={[
+                { src: java, alt: "Java" },
+                { src: mysql, alt: "MySQL" },
               ]}
             />
           </div>

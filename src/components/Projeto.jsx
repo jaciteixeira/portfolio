@@ -16,7 +16,7 @@ const Projeto = (props) => {
         </a> */}
       </div>
       <div className='linguagens'>
-        <p>LINGUAGENS UTILIZADAS:</p>
+        <p>FERRAMENTAS UTILIZADAS:</p>
         <div className='images'>
           {props.linguagens.map((linguagem, index) => (
             <img key={index} src={linguagem.src} alt={linguagem.alt} />

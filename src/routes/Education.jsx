@@ -2,11 +2,14 @@ import React from 'react';
 import Certificado from '../components/Certificado';
 import certificadoFiap from '../assets/certificado/certificado-fiap.svg';
 import certificadoFiapWeb from '../assets/certificado/certificado-fiap-web.svg';
-import certificadoSwagger from '../assets/certificado/certificado-swagger.png';
-import certificadoReact from '../assets/certificado/certificado-react.png';
-import certificadoReactComponents from '../assets/certificado/certificado-react-components.png';
 import certificadoLibras from '../assets/certificado/certificado-libras.png';
 import certificadoSustentabilidade from '../assets/certificado/certificado-sustentabilidade.png';
+import certificadoSwagger from '../assets/certificado/certificado-swagger.png';
+import certificadoReact from '../assets/certificado/certificado-react.png';
+import certificadoReactRouter from '../assets/certificado/certificado-react-router-dom.png';
+import certificadoReactComponents from '../assets/certificado/certificado-react-components.png';
+import certificadoImpactaAplicacao from '../assets/certificado/certificado-impacta-aplicacao-java.svg';
+import certificadoImpactaDesenvolvimento from '../assets/certificado/certificado-impacta-desenvolvimento-web-service.svg';
 
 export default function Education() {
   const certificadosFiap = [
@@ -55,7 +58,28 @@ export default function Education() {
       src: certificadoReactComponents,
       descricao: 'React: Como os componentes funcionam',
     },
+    {
+      url: 'https://cursos.alura.com.br/user/jaci9306/course/React-desenvolvendo-react-router-javaScript/certificate',
+      alt: 'Certificado Curso REACT: DESENVOLVENDO EM REACT ROUTER COM JAVASCRIPT',
+      src: certificadoReactComponents,
+      descricao: 'React: Como os componentes funcionam',
+    },
 
+  ]
+
+  const certificadosImpacta = [
+    {
+      url: 'https://edools-3-production.s3.amazonaws.com/org-6352/school-9201/certificates/enrollment-8873698/course-14854-0862e031-5724-41a2-aa21-263f573bc6bc.pdf',
+      alt: 'Certificado Java - Desenvolvendo Web Services',
+      src: certificadoImpactaDesenvolvimento,
+      descricao: 'Java - Desenvolvendo Web Services',
+    },
+    {
+      url: 'https://edools-3-production.s3.amazonaws.com/org-6352/school-9201/certificates/enrollment-8873698/course-14852-30d51589-8726-4cd3-9b00-1aca3307ecd3.pdf',
+      alt: 'Java - Criando uma Aplicação Completa ',
+      src: certificadoImpactaAplicacao,
+      descricao: 'Java - Criando uma Aplicação Completa',
+    },
   ]
 
   return (
@@ -68,6 +92,7 @@ export default function Education() {
         <div className='images'>
           <Certificado titulo={"Certificados Acadêmico"} certificados={certificadosFiap} />
           <Certificado titulo={"Certificados Alura"} certificados = { certificadosAlura} />
+          <Certificado titulo={"Certificados Impacta"} certificados = { certificadosImpacta} />
         </div>
       </div>
     </section>
