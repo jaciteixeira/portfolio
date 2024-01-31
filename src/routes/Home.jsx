@@ -139,8 +139,8 @@ const Home = () => {
               alt="Home da página"
               titulo="Nexio Bike"
               descritivo="Este projeto foi concebido com propósitos acadêmicos, tendo como foco a realização de vistorias para uma seguradora. A aplicação foi especialmente dedicada à inspeção de bicicletas, visando identificar com precisão se o objeto presente na imagem corresponde realmente a uma bicicleta."
-              repositorio="https://github.com/orgs/Nexio-Corp/repositories"
-              link="https://nexio-corp.github.io/nexio-bike-rwd/"
+              repositorio="https://github.com/Nexio-Corp/nexio-bike-rwd"
+              link="https://nexio-bike-rwd.vercel.app/"
               linguagens={[
                 { src: html, alt: "HTML" },
                 { src: css, alt: "Css" },
