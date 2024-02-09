@@ -66,6 +66,10 @@ export default function Header() {
     };
   }, []);
 
+  useEffect(() => {
+    document.body.style.overflowY = isActive ? "hidden" : "auto";
+  }, [isActive])
+
   // useEffect(() => {
   //   // Quando a rota muda, ajuste o scroll
   //   scrollToSection(activeSection);
