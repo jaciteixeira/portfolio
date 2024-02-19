@@ -166,7 +166,7 @@ const Home = () => {
             <Projeto
               src={projetoConstrucao}
               alt="Ilustração de uma aplicação em construção"
-              titulo="Sistema para Hotel"
+              titulo="Sistema de Gerenciamento para Hotel"
               descritivo="Atualmente em fase de desenvolvimento, que incorpora os princípios da programação orientada a objetos, design gráfico intuitivo e banco de dados. Objetivo é proporcionar uma solução completa e eficiente para simplificar as operações hoteleiras."
               repositorio="https://github.com/jaciteixeira"
               linguagens={[
